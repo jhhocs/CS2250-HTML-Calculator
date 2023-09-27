@@ -1,0 +1,26 @@
+body div#calculator {
+  max-width: 300px;
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+}
+body div#calculator input#input {
+  margin: 10px;
+  width: 250px;
+}
+body div#calculator div.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  margin: 10px;
+}
+body div#calculator div.grid-container button {
+  font-size: 20px;
+  padding: 20px;
+}
+body div#calculator div.grid-container button:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */
