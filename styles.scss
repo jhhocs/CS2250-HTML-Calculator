@@ -1,3 +1,8 @@
+@font-face {
+    font-family: digitalFont;
+    src: url(digital-7/digital-7.ttf)
+}
+
 body {
     
     div#calculator {
@@ -8,8 +13,15 @@ body {
         border-radius: 10px;
         
         input#input {
-            margin: 10px;
+            font-family: digitalFont;
+            letter-spacing: 1px;
+            text-align:right;
+            font-size: 50px;
+            display: block;
+            margin: 10px auto;
+            padding: 5px;
             width: 250px;
+            pointer-events: none;
         }
 
         div.grid-container {
