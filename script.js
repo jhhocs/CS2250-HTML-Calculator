@@ -5,10 +5,8 @@ const equalsButton = document.getElementById("equals")
 const clearButton = document.getElementById("clear")
 
 var currentOperation;
-var firstNum;
-var error;
-
-clear()
+var firstNum = "0";
+var error = false;
 
 // Add event listener for numbers
 for(let number of numbers) {
@@ -40,13 +38,13 @@ function operationClicked(event) {
 equalsButton.addEventListener("click", (event) => {
     if(error) return
 
-    let secondNumber = parseInt(inputBox.value)
+    let secondNumber = parseFloat(inputBox.value)
     if(secondNumber == 0) {
         inputBox.value = "ERROR"
         error = true
         return
     }
-    firstNum, inputBox.value = eval(parseInt(firstNum) + currentOperation +  secondNumber);
+    firstNum, inputBox.value = eval(parseFloat(firstNum) + currentOperation +  secondNumber);
 })
 
 clearButton.addEventListener("click", () => {
