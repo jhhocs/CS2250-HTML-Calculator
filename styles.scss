@@ -40,9 +40,12 @@ body {
                 letter-spacing: 0px;
                 font-size: 17px;
                 padding: 0px;
-                margin: 0px;
-                margin-top: 3px;
+                // margin: 3px, 24px, 0px, 5px;
+                margin-bottom: 0px;
+                margin-left: 5px;
                 margin-right: 24px;
+                margin-top: 3px;
+
             }
 
             h2 {
@@ -50,8 +53,8 @@ body {
                 font-size: 27px;
                 text-align: right;
                 padding: 0px;
-                padding-right: 10px;
                 margin: 0px;
+                margin-right: 5px;
             }
         }
 
@@ -59,7 +62,7 @@ body {
             border: 2px solid black;
             border-collapse: collapse;
             padding: 15px;
-            margin-left: 10px;
+            margin-left: 15px;
             margin-bottom: 10px;
             background-color: rgb(47, 47, 47);
         }
