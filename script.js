@@ -38,12 +38,17 @@ function operationClicked(event) {
 equalsButton.addEventListener("click", (event) => {
     if(error) return
 
+    if(inputBox.value == "") {
+        // FIX MULTIPLE = ISSUE
+    }
+
     let secondNumber = parseFloat(inputBox.value)
     if(secondNumber == 0) {
         inputBox.value = "ERROR"
         error = true
         return
     }
+    console.log(firstNum + " " + secondNumber)
     firstNum, inputBox.value = eval(parseFloat(firstNum) + currentOperation +  secondNumber);
 })
 
@@ -55,4 +60,5 @@ function clear() {
     error = false
     firstNum = "0"
     inputBox.value = "0"
+    secondNumber = null
 }
