@@ -18,7 +18,6 @@ body div#calculator input#input {
   margin: 10px auto;
   padding: 5px;
   width: 250px;
-  pointer-events: none;
 }
 body div#calculator div.grid-container {
   display: grid;
