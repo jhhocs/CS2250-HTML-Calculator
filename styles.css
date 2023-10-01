@@ -3,11 +3,13 @@
   src: url(digital-7/digital-7.ttf);
 }
 body div#calculator {
-  max-width: 300px;
+  width: 300px;
   border: 2px;
   border-color: black;
   border-style: solid;
-  border-radius: 10px;
+  border-radius: 15px;
+  padding-bottom: 20px;
+  background-color: rgb(43, 93, 168);
 }
 body div#calculator input#input {
   font-family: digitalFont;
@@ -15,9 +17,41 @@ body div#calculator input#input {
   text-align: right;
   font-size: 50px;
   display: block;
-  margin: 10px auto;
+  margin: 20px auto 10px auto;
   padding: 5px;
   width: 250px;
+}
+body div#calculator div.text {
+  color: rgb(231, 231, 231);
+  display: flex;
+  margin: 10px;
+  margin-bottom: 0px;
+}
+body div#calculator div.text h1 {
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 0px;
+  font-size: 17px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 3px;
+  margin-right: 24px;
+}
+body div#calculator div.text h2 {
+  font-family: "American Typewriter", serif;
+  font-size: 27px;
+  text-align: right;
+  padding: 0px;
+  padding-right: 10px;
+  margin: 0px;
+}
+body div#calculator table, body div#calculator td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(47, 47, 47);
 }
 body div#calculator div.grid-container {
   display: grid;
@@ -25,12 +59,26 @@ body div#calculator div.grid-container {
   gap: 10px;
   margin: 10px;
 }
-body div#calculator div.grid-container button {
+body div#calculator div.grid-container .number {
+  border-radius: 5px;
+  font-family: "Trebuchet MS", sans-serif;
   font-size: 20px;
-  padding: 20px;
+  padding: 0px 20px 20px 5px;
+  text-align: left;
+  background-color: white;
+}
+body div#calculator div.grid-container #clear, body div#calculator div.grid-container #equals, body div#calculator div.grid-container .operation {
+  border-radius: 5px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  padding: 0px 20px 20px 5px;
+  text-align: left;
+  background-color: rgb(198, 55, 55);
+  color: white;
 }
 body div#calculator div.grid-container button:hover {
   cursor: pointer;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05) 0 0);
 }
 
 /*# sourceMappingURL=styles.css.map */

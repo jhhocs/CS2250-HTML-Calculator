@@ -32,7 +32,7 @@ function operationClicked(event) {
     if(error || !validOperation) return
 
     validOperation = false;
-    inputBox.value += event.currentTarget.innerText;
+    inputBox.value += event.currentTarget.id;
 }
 
 equalsButton.addEventListener("click", (event) => {
@@ -82,11 +82,11 @@ function computeInput(input) {
 
                 break
             case '*':
-                input.splice(i - 1, 3, multiply(parseInt(input[i-1]), parseInt(input[i+1])))
+                input.splice(i - 1, 3, multiply(parseFloat(input[i-1]), parseFloat(input[i+1])))
 
                 return computeInput(input)
             case '/':
-                input.splice(i - 1, 3, divide(parseInt(input[i-1]), parseInt(input[i+1])))
+                input.splice(i - 1, 3, divide(parseFloat(input[i-1]), parseFloat(input[i+1])))
 
                 return computeInput(input)
             default:
@@ -94,11 +94,11 @@ function computeInput(input) {
         }
     }
     if(operation == 1) {
-        input.splice(operationIndex - 1, 3, add(parseInt(input[operationIndex-1]), parseInt(input[operationIndex+1])))
+        input.splice(operationIndex - 1, 3, add(parseFloat(input[operationIndex-1]), parseFloat(input[operationIndex+1])))
         return computeInput(input)
     }
     else if(operation == 2){
-        input.splice(operationIndex - 1, 3, subtract(parseInt(input[operationIndex-1]), parseInt(input[operationIndex+1])))
+        input.splice(operationIndex - 1, 3, subtract(parseFloat(input[operationIndex-1]), parseFloat(input[operationIndex+1])))
         return computeInput(input)
     }
 
