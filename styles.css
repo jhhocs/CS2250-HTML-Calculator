@@ -20,6 +20,7 @@ body div#calculator input#input {
   margin: 20px auto 10px auto;
   padding: 5px;
   width: 250px;
+  border-color: gray;
 }
 body div#calculator div.text {
   color: rgb(231, 231, 231);
