@@ -9,12 +9,12 @@ var error = false;
 
 // Add event listener for numbers
 for(let number of numbers) {
-    number.addEventListener("click", function(event) {numberClicked(event)})
+    number.addEventListener("click", numberClicked)
 }
 
 // Add event listeners for operations
 for(let operation of operations) {
-    operation.addEventListener("click", function(event) {operationClicked(event)})
+    operation.addEventListener("click", operationClicked)
 }
 
 function numberClicked(event) {
